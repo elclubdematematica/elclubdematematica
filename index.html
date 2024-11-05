@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Matemáticas de Uniminto - Cuadros Mágicos</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Club de Matemáticas de Uniminto ✨</h1>
+        <h2>¡Resuelve los Cuadros Mágicos! 🧩</h2>
+
+        <p>🔔 <strong>Instrucciones:</strong> Completa cada cuadro mágico colocando los números en las celdas de forma que la suma de cada fila, columna y diagonal sea igual a la "suma mágica" indicada para cada cuadro. ¡Buena suerte!</p>
+
+        <div class="magic-squares">
+            <!-- Cuadro 3x3 -->
+            <div class="magic-square">
+                <h3>Cuadro 3x3 (Suma 15)</h3>
+                <div class="board" id="board3x3"></div>
+                <div class="numbers" id="numbers3x3"></div>
+                <button onclick="checkSquare(3)">Verificar</button>
+                <button onclick="resetGame(3)">Reiniciar</button>
+                <p>✅ <a href="https://forms.office.com/pages/responsepage.aspx?id=64W6sVOiZ0Se6NT47U3zAHcz4GBPee9HiEOg7ZXrR_9UNjE3TFI0WDRFVEhJNjlHT0tORUNIQTQ2OC4u&route=shorturl" target="_blank">Registra tu asistencia aquí</a> después de completar el cuadro.</p>
+                <p>💡 <em>Diseño del juego realizado por el profesor Carlos Alberto Montoya Correa con ayuda de IA.</em></p>
+            </div>
+
+            <!-- Cuadro 4x4 -->
+            <div class="magic-square">
+                <h3>Cuadro 4x4 (Suma 34)</h3>
+                <div class="board" id="board4x4"></div>
+                <div class="numbers" id="numbers4x4"></div>
+                <button onclick="checkSquare(4)">Verificar</button>
+                <button onclick="resetGame(4)">Reiniciar</button>
+                <p>✅ <a href="https://forms.office.com/pages/responsepage.aspx?id=64W6sVOiZ0Se6NT47U3zAHcz4GBPee9HiEOg7ZXrR_9UNjE3TFI0WDRFVEhJNjlHT0tORUNIQTQ2OC4u&route=shorturl" target="_blank">Registra tu asistencia aquí</a> después de completar el cuadro.</p>
+                <p>💡 <em>Diseño del juego realizado por el profesor Carlos Alberto Montoya Correa con ayuda de IA.</em></p>
+            </div>
+
+            <!-- Cuadro 5x5 -->
+            <div class="magic-square">
+                <h3>Cuadro 5x5 (Suma 65)</h3>
+                <div class="board" id="board5x5"></div>
+                <div class="numbers" id="numbers5x5"></div>
+                <button onclick="checkSquare(5)">Verificar</button>
+                <button onclick="resetGame(5)">Reiniciar</button>
+                <p>✅ <a href="https://forms.office.com/pages/responsepage.aspx?id=64W6sVOiZ0Se6NT47U3zAHcz4GBPee9HiEOg7ZXrR_9UNjE3TFI0WDRFVEhJNjlHT0tORUNIQTQ2OC4u&route=shorturl" target="_blank">Registra tu asistencia aquí</a> después de completar el cuadro.</p>
+                <p>💡 <em>Diseño del juego realizado por el profesor Carlos Alberto Montoya Correa con ayuda de IA.</em></p>
+            </div>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
